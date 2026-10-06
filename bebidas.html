@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18231d">
+  <title>Bebidas — Forno & Afeto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inner-page drinks-page">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">F</span><span>forno <i>&</i> afeto<small>PIZZARIA ARTESANAL</small></span></a>
+    <nav><a href="index.html">Início</a><a href="cardapio.html">Cardápio</a><a href="reservas.html">Nossa casa</a></nav>
+    <a class="top-order" href="pedido.html">Monte seu pedido <b>↗</b></a>
+  </header>
+
+  <main class="drinks-main">
+    <section class="drinks-hero-new">
+      <div class="drinks-hero-copy">
+        <p class="drinks-kicker"><span></span> BEBIDAS PRA TODO MOMENTO</p>
+        <h1>Seu pedido<br>pede algo <em>gelado.</em></h1>
+        <p>Do clássico que todo mundo conhece ao refresco feito na casa. Escolha o seu e aproveite.</p>
+        <a class="drinks-hero-button" href="#drinkMenu">Explorar bebidas <span>↓</span></a>
+        <div class="drinks-hero-note"><b>6 opções</b><i></i> Refrigerantes, água e limonada</div>
+      </div>
+      <div class="drinks-hero-visual">
+        <div class="drinks-hero-orbit"></div>
+        <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?auto=format&fit=crop&w=1000&q=85" alt="Lata de Coca-Cola bem gelada">
+        <div class="hero-photo-label"><span>GELADA NO PONTO</span><b>Um brinde<br>ao seu momento.</b></div>
+        <span class="hero-spark hero-spark-one">✳</span><span class="hero-spark hero-spark-two">✦</span>
+      </div>
+    </section>
+
+    <section class="drinks-menu" id="drinkMenu">
+      <div class="drinks-section-heading">
+        <div><p class="drinks-kicker dark-kicker">ESCOLHA A SUA</p><h2>Qual vai <em>acompanhar?</em></h2><p>Servimos tudo bem gelado, do jeitinho que combina com pizza.</p></div>
+        <span class="menu-count">CARDÁPIO <b>01 — 06</b></span>
+      </div>
+      <div class="drink-filters" role="group" aria-label="Filtrar bebidas">
+        <button class="drink-filter active" type="button" data-drink-filter="all" aria-pressed="true">Todas <span>06</span></button>
+        <button class="drink-filter" type="button" data-drink-filter="soda" aria-pressed="false">Refrigerantes</button>
+        <button class="drink-filter" type="button" data-drink-filter="fresh" aria-pressed="false">Refrescantes</button>
+      </div>
+
+      <div class="drinks-grid">
+        <article class="drink-card drink-featured" data-drink-kind="soda">
+          <div class="drink-image"><img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?auto=format&fit=crop&w=900&q=85" alt="Lata vermelha de Coca-Cola Original"><span class="drink-image-tag">A CLÁSSICA</span><span class="drink-serve">350 ml</span></div>
+          <div class="drink-card-copy"><div class="drink-brand-row coke-brand"><span class="brand-dot">C</span><span>COCA-COLA</span></div><h3>Coca-Cola Original</h3><p>O sabor clássico, servido bem gelado.</p><div class="drink-card-bottom"><strong>R$ 7,00</strong><button class="catalog-add drink-add" data-name="Coca-Cola Original · 350 ml" data-category="drink" data-price="7.00">Adicionar <span>＋</span></button></div></div>
+        </article>
+        <article class="drink-card" data-drink-kind="soda">
+          <div class="drink-image"><img src="https://images.unsplash.com/photo-1543253687-c931c8e01820?auto=format&fit=crop&w=900&q=85" alt="Lata preta de Coca-Cola Zero"><span class="drink-image-tag">SEM AÇÚCAR</span><span class="drink-serve">350 ml</span></div>
+          <div class="drink-card-copy"><div class="drink-brand-row coke-brand"><span class="brand-dot">C</span><span>COCA-COLA</span></div><h3>Coca-Cola Zero</h3><p>Todo o sabor da Coca-Cola, sem açúcar.</p><div class="drink-card-bottom"><strong>R$ 7,00</strong><button class="catalog-add drink-add" data-name="Coca-Cola Zero · 350 ml" data-category="drink" data-price="7.00">Adicionar <span>＋</span></button></div></div>
+        </article>
+        <article class="drink-card" data-drink-kind="soda">
+          <div class="drink-image"><img src="https://images.unsplash.com/photo-1554283180-2eb141938ee9?auto=format&fit=crop&w=900&q=85" alt="Lata azul de Pepsi"><span class="drink-image-tag">BEM GELADA</span><span class="drink-serve">350 ml</span></div>
+          <div class="drink-card-copy"><div class="drink-brand-row pepsi-brand"><span class="brand-dot">P</span><span>PEPSI</span></div><h3>Pepsi</h3><p>Refrescância marcante pra acompanhar seu pedido.</p><div class="drink-card-bottom"><strong>R$ 6,50</strong><button class="catalog-add drink-add" data-name="Pepsi · 350 ml" data-category="drink" data-price="6.50">Adicionar <span>＋</span></button></div></div>
+        </article>
+        <article class="drink-card" data-drink-kind="soda">
+          <div class="drink-image"><img src="https://images.unsplash.com/photo-1651000877908-18e19a5d4ceb?auto=format&fit=crop&w=900&q=85" alt="Lata azul de Pepsi"><span class="drink-image-tag">SEM AÇÚCAR</span><span class="drink-serve">350 ml</span></div>
+          <div class="drink-card-copy"><div class="drink-brand-row pepsi-brand"><span class="brand-dot">P</span><span>PEPSI</span></div><h3>Pepsi Black</h3><p>O sabor intenso da Pepsi em versão sem açúcar.</p><div class="drink-card-bottom"><strong>R$ 6,50</strong><button class="catalog-add drink-add" data-name="Pepsi Black · 350 ml" data-category="drink" data-price="6.50">Adicionar <span>＋</span></button></div></div>
+        </article>
+        <article class="drink-card" data-drink-kind="fresh">
+          <div class="drink-image"><img src="https://images.unsplash.com/photo-1660201231830-1c1af85279ff?auto=format&fit=crop&w=900&q=85" alt="Garrafa de água mineral"><span class="drink-image-tag">LEVE E NATURAL</span><span class="drink-serve">500 ml</span></div>
+          <div class="drink-card-copy"><div class="drink-brand-row water-brand"><span class="brand-dot">✧</span><span>ÁGUA</span></div><h3>Água mineral</h3><p>Uma pausa leve e refrescante para sua refeição.</p><div class="drink-card-bottom"><strong>R$ 4,50</strong><button class="catalog-add drink-add" data-name="Água mineral · 500 ml" data-category="drink" data-price="4.50">Adicionar <span>＋</span></button></div></div>
+        </article>
+        <article class="drink-card" data-drink-kind="fresh">
+          <div class="drink-image"><img src="https://images.unsplash.com/photo-1634407094698-edb277926ef7?auto=format&fit=crop&w=900&q=85" alt="Limonada servida com gelo e limão"><span class="drink-image-tag">FEITA NA CASA</span><span class="drink-serve">500 ml</span></div>
+          <div class="drink-card-copy"><div class="drink-brand-row lemon-brand"><span class="brand-dot">✳</span><span>DA NOSSA COZINHA</span></div><h3>Limonada da casa</h3><p>Limão fresco, gelo e um toque de hortelã.</p><div class="drink-card-bottom"><strong>R$ 12,00</strong><button class="catalog-add drink-add" data-name="Limonada da casa · 500 ml" data-category="drink" data-price="12.00">Adicionar <span>＋</span></button></div></div>
+        </article>
+      </div>
+      <p class="drinks-price-note">Preços demonstrativos. Tamanhos e disponibilidade podem variar.</p>
+    </section>
+
+    <section class="drinks-bottom-banner"><div class="banner-icon">✳</div><div><p>COMBINA COM TUDO</p><h2>Uma pizza quentinha<br>e sua bebida favorita.</h2></div><a href="cardapio.html">Escolher uma pizza <span>↗</span></a></section>
+  </main>
+  <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">F</span><span>forno <i>&</i> afeto<small>PIZZARIA ARTESANAL</small></span></a><span>Feito com carinho e forno quente. © 2026</span><a href="massas.html">Ver massas</a></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>

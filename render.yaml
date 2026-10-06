@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: forno-afeto
+    runtime: python
+    plan: free
+    buildCommand: python -m py_compile server.py
+    startCommand: python server.py
+    healthCheckPath: /
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
